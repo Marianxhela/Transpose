@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Excel file</title>
+  {{ dropzone.load_css() }}
+  {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 100px;') }}
+</head>
+<body>
+    {{ dropzone.create(action='upload', id='foo') }}
+    {{ dropzone.load_js() }}
+    {{ dropzone.config(id='foo', default_message='Dropzone Foo')}}
+</body>
+</html>
